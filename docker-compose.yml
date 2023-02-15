@@ -7,6 +7,8 @@ services:
       MYSQL_DATABASE: wpdb
       MYSQL_USER: wpuser
       MYSQL_PASSWORD: wppassword
+    ports:
+      - "3307:3306"
     volumes:
       - mysql:/var/lib/mysql
 
